@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#5b1110">
-  <title>Ponteio Recife - Cardapio Digital</title>
-  <meta name="description" content="Cardapio digital do Ponteio Recife, rodizio de carnes com buffet premium completo em Boa Viagem.">
+  <title>Ponteio Recife - Cardápio Digital</title>
+  <meta name="description" content="Cardápio digital do Ponteio Recife, rodízio de carnes com buffet premium completo em Boa Viagem.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@600;700&family=Libre+Franklin:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -20,17 +20,17 @@
       </picture>
 
       <div class="cover-content">
-        <span class="menu-word">Cardapio Digital</span>
+        <span class="menu-word">Cardápio Digital</span>
         <img class="brand-logo" src="assets/logo-ponteio-site.png" alt="Ponteio Churrascaria Recife">
         <div class="cover-copy">
-          <span>Rodizio de carnes, buffet premium e vinhos</span>
+          <span>Rodízio de carnes, buffet premium e vinhos</span>
           <h1 class="sr-only">Ponteio Churrascaria Recife</h1>
         </div>
       </div>
     </header>
 
-    <nav class="tab-dock" id="cardapio" role="tablist" aria-label="Categorias do cardapio">
-      <button class="tab is-active" id="tab-rodizio" type="button" role="tab" aria-selected="true" aria-controls="panel-rodizio" data-theme="rodizio"><span>01</span><b>Rodizio</b></button>
+    <nav class="tab-dock" id="cardapio" role="tablist" aria-label="Categorias do cardápio">
+      <button class="tab is-active" id="tab-rodizio" type="button" role="tab" aria-selected="true" aria-controls="panel-rodizio" data-theme="rodizio"><span>01</span><b>Rodízio</b></button>
       <button class="tab" id="tab-buffet" type="button" role="tab" aria-selected="false" aria-controls="panel-buffet" data-theme="buffet"><span>02</span><b>Buffet Premium</b></button>
       <button class="tab" id="tab-bebidas" type="button" role="tab" aria-selected="false" aria-controls="panel-bebidas" data-theme="bebidas"><span>03</span><b>Bebidas</b></button>
       <button class="tab" id="tab-vinhos" type="button" role="tab" aria-selected="false" aria-controls="panel-vinhos" data-theme="vinhos"><span>04</span><b>Vinhos</b></button>
@@ -38,62 +38,66 @@
       <button class="tab" id="tab-info" type="button" role="tab" aria-selected="false" aria-controls="panel-info" data-theme="info"><span>06</span><b>Info</b></button>
     </nav>
 
-    <section class="menu-status" aria-label="Resumo do cardapio">
-      <span>Valores em definicao</span>
+    <section class="menu-status" aria-label="Resumo do cardápio">
+      <span>Valores em definição</span>
       <span>Boa Viagem - Recife</span>
     </section>
 
     <div class="tab-panels">
       <section class="panel is-active" id="panel-rodizio" role="tabpanel" aria-labelledby="tab-rodizio">
         <div class="section-head">
-          <span>Servico da casa</span>
-          <h2>Rodizio de carnes</h2>
-          <p>Selecao de cortes bovinos nobres, cordeiro, porco, frango e peixe, preparados com cuidado e servidos a mesa.</p>
+          <span>Serviço da casa</span>
+          <h2>Rodízio de carnes</h2>
+          <p>Seleção de cortes bovinos nobres, cordeiro, porco, frango e peixe, preparados com cuidado e servidos à mesa.</p>
         </div>
 
         <div class="feature-strip">
           <img src="assets/carnes-ponteio.jpg" alt="Carne servida no Ponteio Recife">
           <div>
-            <span>Tradicao Ponteio</span>
+            <span>Tradição Ponteio</span>
             <h3>Carnes selecionadas todos os dias</h3>
-            <p>A experiencia comeca na escolha dos cortes e segue na brasa, com servico continuo para a mesa.</p>
+            <p>A experiência começa na escolha dos cortes e segue na brasa, com serviço contínuo para a mesa.</p>
           </div>
         </div>
 
-        <div class="subtabs" role="tablist" aria-label="Partes do rodizio">
-          <button class="subtab is-active" type="button" data-target="rodizio-carnes">Carnes</button>
-          <button class="subtab" type="button" data-target="rodizio-buffet">Buffet</button>
-          <button class="subtab" type="button" data-target="rodizio-frios">Frios</button>
-          <button class="subtab" type="button" data-target="rodizio-sushi">Sushi</button>
+        <div class="subtabs" role="tablist" aria-label="Categorias de carnes do rodízio">
+          <button class="subtab is-active" type="button" data-target="rodizio-bovino">Bovino</button>
+          <button class="subtab" type="button" data-target="rodizio-cordeiro">Cordeiro</button>
+          <button class="subtab" type="button" data-target="rodizio-suino">Suíno</button>
+          <button class="subtab" type="button" data-target="rodizio-aves-peixes">Aves e Peixes</button>
         </div>
 
-        <div class="subpanel is-active" id="rodizio-carnes">
+        <div class="subpanel is-active" id="rodizio-bovino">
           <div class="menu-list">
-            <article class="menu-item"><div><span>Bovinos</span><h3>Cortes nobres</h3><p>Variedade de cortes bovinos selecionados, servidos no ponto da casa.</p></div><strong>Incluso</strong></article>
-            <article class="menu-item"><div><span>Cordeiro</span><h3>Cortes de cordeiro</h3><p>Opcao especial do rodizio, pensada para quem busca sabor marcante.</p></div><strong>Incluso</strong></article>
-            <article class="menu-item"><div><span>Porco</span><h3>Suinos da brasa</h3><p>Cortes suinos preparados para acompanhar o ritmo do rodizio.</p></div><strong>Incluso</strong></article>
-            <article class="menu-item"><div><span>Aves e peixe</span><h3>Frango e peixe</h3><p>Alternativas leves para equilibrar a sequencia de carnes.</p></div><strong>Incluso</strong></article>
+            <article class="menu-item"><div><span>Clássico</span><h3>Picanha</h3><p>Corte nobre do rodízio, servido à mesa no ritmo da brasa.</p></div><strong>Incluso</strong></article>
+            <article class="menu-item"><div><span>Especial</span><h3>Filé com Queijo</h3><p>Filé preparado com queijo, uma das seleções destacadas pela casa.</p></div><strong>Incluso</strong></article>
+            <article class="menu-item"><div><span>Brasa lenta</span><h3>Costela</h3><p>Corte de sabor profundo, preparado para chegar macio e suculento.</p></div><strong>Incluso</strong></article>
+            <article class="menu-item"><div><span>Premium</span><h3>Costela Premium</h3><p>Versão especial da costela dentro da seleção de carnes do Ponteio.</p></div><strong>Incluso</strong></article>
+            <article class="menu-item"><div><span>Seleção</span><h3>Cupim</h3><p>Corte bovino marcante, servido em fatias no rodízio.</p></div><strong>Incluso</strong></article>
+            <article class="menu-item"><div><span>Maciez</span><h3>Fraldinha</h3><p>Corte de fibras longas, com bom equilíbrio entre suculência e sabor.</p></div><strong>Incluso</strong></article>
+            <article class="menu-item"><div><span>Tradicional</span><h3>Alcatra</h3><p>Opção clássica para quem prefere cortes bovinos mais suaves.</p></div><strong>Incluso</strong></article>
+            <article class="menu-item"><div><span>Corte nobre</span><h3>Bife de Chorizo</h3><p>Corte alto e intenso, presente na seleção oficial de carnes.</p></div><strong>Incluso</strong></article>
           </div>
         </div>
 
-        <div class="subpanel" id="rodizio-buffet" hidden>
+        <div class="subpanel" id="rodizio-cordeiro" hidden>
           <div class="menu-list">
-            <article class="menu-item"><div><span>Premium</span><h3>Buffet completo</h3><p>Saladas, queijos, acompanhamentos e receitas regionais para compor o prato.</p></div><strong>Incluso</strong></article>
-            <article class="menu-item"><div><span>Quentes</span><h3>Pratos quentes</h3><p>Guarnicoes e preparos quentes para acompanhar os cortes da casa.</p></div><strong>Incluso</strong></article>
+            <article class="menu-item"><div><span>Cordeiro</span><h3>Paleta de Cordeiro</h3><p>Corte de cordeiro destacado pela casa, com sabor marcante e preparo cuidadoso.</p></div><strong>Incluso</strong></article>
+            <article class="menu-item"><div><span>Seleção</span><h3>Cortes de cordeiro</h3><p>Opções servidas dentro da sequência do rodízio, conforme disponibilidade do salão.</p></div><strong>Incluso</strong></article>
           </div>
         </div>
 
-        <div class="subpanel" id="rodizio-frios" hidden>
+        <div class="subpanel" id="rodizio-suino" hidden>
           <div class="menu-list">
-            <article class="menu-item"><div><span>Vinhos</span><h3>Frios e queijos</h3><p>Selecao fria para montar entradas, acompanhar vinhos e abrir a refeicao com calma.</p></div><strong>Incluso</strong></article>
-            <article class="menu-item"><div><span>Saladas</span><h3>Saladas frescas</h3><p>Opcoes leves do buffet para equilibrar carnes, vinhos e pratos quentes.</p></div><strong>Incluso</strong></article>
+            <article class="menu-item"><div><span>Suíno</span><h3>Porco</h3><p>Corte suíno presente na seleção oficial de carnes do rodízio.</p></div><strong>Incluso</strong></article>
+            <article class="menu-item"><div><span>Brasa</span><h3>Suínos da casa</h3><p>Preparos suínos para alternar com cortes bovinos e cordeiro.</p></div><strong>Incluso</strong></article>
           </div>
         </div>
 
-        <div class="subpanel" id="rodizio-sushi" hidden>
+        <div class="subpanel" id="rodizio-aves-peixes" hidden>
           <div class="menu-list">
-            <article class="menu-item"><div><span>Japones</span><h3>Sushi no buffet</h3><p>Selecao de sushis dentro do buffet premium da casa.</p></div><strong>Incluso</strong></article>
-            <article class="menu-item"><div><span>Apoio</span><h3>Pratos de apoio</h3><p>Itens para completar a experiencia do rodizio alem da brasa.</p></div><strong>Incluso</strong></article>
+            <article class="menu-item"><div><span>Aves</span><h3>Frango</h3><p>Opção leve da sequência, preparada para equilibrar o rodízio.</p></div><strong>Incluso</strong></article>
+            <article class="menu-item"><div><span>Peixes</span><h3>Peixe</h3><p>Alternativa servida dentro da variedade de carnes do Ponteio.</p></div><strong>Incluso</strong></article>
           </div>
         </div>
       </section>
@@ -101,37 +105,98 @@
       <section class="panel" id="panel-buffet" role="tabpanel" aria-labelledby="tab-buffet" hidden>
         <div class="section-head">
           <span>Buffet premium</span>
-          <h2>Saladas, queijos, sushi e pratos quentes</h2>
-          <p>Uma mesa ampla para acompanhar as carnes, montar entradas e criar harmonizacoes com bebidas e vinhos.</p>
+          <h2>Buffet completo</h2>
+          <p>Saladas, sushi, queijos, frios e pratos quentes da culinária de Pernambuco, incluindo camarão, baião de dois, moqueca e feijoada em dias especiais.</p>
         </div>
-        <div class="photo-grid">
-          <article><img src="assets/buffet-ponteio.jpg" alt="Buffet do Ponteio Recife"><h3>Buffet completo</h3><p>Variedade de saladas, queijos e acompanhamentos.</p></article>
-          <article><img src="assets/carnes-ponteio.jpg" alt="Carne no Ponteio Recife"><h3>Pratos quentes</h3><p>Guarnicoes e receitas regionais para acompanhar o rodizio.</p></article>
+
+        <div class="feature-strip buffet-strip">
+          <img src="assets/buffet-ponteio.jpg" alt="Buffet do Ponteio Recife">
+          <div>
+            <span>Centro do salão</span>
+            <h3>Uma mesa para acompanhar o rodízio</h3>
+            <p>Sob o mural de João Andrade, o buffet reúne entradas frias, saladas, sushi, queijos, pratos quentes e acompanhamentos.</p>
+          </div>
+        </div>
+
+        <div class="subtabs" role="tablist" aria-label="Categorias do buffet premium">
+          <button class="subtab is-active" type="button" data-target="buffet-proteinas">Proteínas</button>
+          <button class="subtab" type="button" data-target="buffet-massas">Massas</button>
+          <button class="subtab" type="button" data-target="buffet-guarnicoes">Guarnições</button>
+          <button class="subtab" type="button" data-target="buffet-saladas">Saladas</button>
+          <button class="subtab" type="button" data-target="buffet-sushi">Sushi</button>
+          <button class="subtab" type="button" data-target="buffet-frios">Frios</button>
+        </div>
+
+        <div class="subpanel is-active" id="buffet-proteinas">
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Mar</span><h3>Camarão</h3><p>Item quente destacado pelo Ponteio entre os preparos da culinária pernambucana.</p></div><strong>Buffet</strong></article>
+            <article class="menu-item"><div><span>Regional</span><h3>Moqueca</h3><p>Preparo quente para compor o prato junto das carnes e guarnições.</p></div><strong>Buffet</strong></article>
+            <article class="menu-item"><div><span>Tradicional</span><h3>Feijoada</h3><p>Servida às quartas e sábados, com os acompanhamentos essenciais.</p></div><strong>Dias especiais</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="buffet-massas" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Pratos quentes</span><h3>Massas do buffet</h3><p>Opções quentes para acompanhar carnes, camarão, moqueca e saladas.</p></div><strong>Buffet</strong></article>
+            <article class="menu-item"><div><span>Molhos</span><h3>Preparo do dia</h3><p>Seleção variável conforme a curadoria diária da cozinha.</p></div><strong>Consulte</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="buffet-guarnicoes" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Pernambuco</span><h3>Baião de dois</h3><p>Receita regional destacada no buffet quente da casa.</p></div><strong>Buffet</strong></article>
+            <article class="menu-item"><div><span>Feijoada</span><h3>Acompanhamentos essenciais</h3><p>Itens para montar a feijoada da forma que preferir às quartas e sábados.</p></div><strong>Dias especiais</strong></article>
+            <article class="menu-item"><div><span>Quentes</span><h3>Guarnições do dia</h3><p>Preparos quentes para completar o rodízio de carnes.</p></div><strong>Buffet</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="buffet-saladas" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Frescor</span><h3>Seleção de saladas</h3><p>Variedade colorida para abrir a refeição ou equilibrar o prato.</p></div><strong>Buffet</strong></article>
+            <article class="menu-item"><div><span>Leves</span><h3>Entradas frias</h3><p>Opções para começar antes dos cortes da brasa.</p></div><strong>Buffet</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="buffet-sushi" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Japonês</span><h3>Sushi</h3><p>Seleção de sushi dentro do buffet premium do Ponteio.</p></div><strong>Buffet</strong></article>
+            <article class="menu-item"><div><span>Apoio</span><h3>Itens frios japoneses</h3><p>Opções para alternar com saladas, frios e pratos quentes.</p></div><strong>Buffet</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="buffet-frios" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Vinhos</span><h3>Queijos e frios</h3><p>Seleção fria para entradas e harmonização com vinhos.</p></div><strong>Buffet</strong></article>
+            <article class="menu-item"><div><span>Mesa fria</span><h3>Frios do buffet</h3><p>Itens para compor o prato antes ou durante a sequência de carnes.</p></div><strong>Buffet</strong></article>
+          </div>
         </div>
       </section>
 
       <section class="panel" id="panel-bebidas" role="tabpanel" aria-labelledby="tab-bebidas" hidden>
         <div class="section-head">
           <span>Bar da casa</span>
-          <h2>Bebidas e coqueteis</h2>
-          <p>Opcoes para brindar, acompanhar o rodizio e abrir a noite com mais leveza.</p>
+          <h2>Bebidas e coquetéis</h2>
+          <p>Bar completo, coquetéis clássicos e autorais, carrinho de caipirinhas com frutas frescas e serviço à mesa.</p>
         </div>
         <div class="menu-list photo-list">
-          <article class="menu-item with-photo"><img src="assets/bebidas-ponteio.jpg" alt="Bebidas no Ponteio Recife"><div><span>Coqueteis</span><h3>Drinks da casa</h3><p>Carta de coqueteis para todas as ocasioes.</p></div><strong>Consulte</strong></article>
-          <article class="menu-item"><div><span>Sem alcool</span><h3>Bebidas diversas</h3><p>Agua, refrigerantes, sucos e opcoes para acompanhar o buffet.</p></div><strong>Consulte</strong></article>
+          <article class="menu-item with-photo"><img src="assets/bebidas-ponteio.jpg" alt="Bebidas no Ponteio Recife"><div><span>Carrinho</span><h3>Caipirinha tradicional de limão</h3><p>Preparada ao lado da mesa, com frutas frescas e cuidado de bar.</p></div><strong>Consulte</strong></article>
+          <article class="menu-item"><div><span>Caipirinhas</span><h3>Frutas vermelhas, frutas amarelas e frutas silvestres</h3><p>Variações destacadas pela casa para o carrinho de caipirinhas.</p></div><strong>Consulte</strong></article>
+          <article class="menu-item"><div><span>Regionais</span><h3>Caju, tangerina e kiwi</h3><p>Opções de caipirinha com frutas frescas, conforme disponibilidade.</p></div><strong>Consulte</strong></article>
+          <article class="menu-item"><div><span>Clássicos</span><h3>Mojito, Aperol, Negroni, Gin tônica e Martini</h3><p>Coquetéis clássicos para acompanhar o almoço, jantar ou celebração.</p></div><strong>Consulte</strong></article>
+          <article class="menu-item"><div><span>Sem álcool</span><h3>Coquetéis sem álcool</h3><p>Opções do bar para quem prefere uma experiência sem bebida alcoólica.</p></div><strong>Consulte</strong></article>
         </div>
       </section>
 
       <section class="panel" id="panel-vinhos" role="tabpanel" aria-labelledby="tab-vinhos" hidden>
         <div class="section-head">
-          <span>Harmonizacao</span>
+          <span>Harmonização</span>
           <h2>Vinhos para carnes e frios</h2>
-          <p>A parte de frios do buffet abre espaco para uma experiencia mais lenta, com queijos, entradas e vinhos.</p>
+          <p>A adega reúne mais de 100 rótulos do novo e velho mundo, entre brancos, tintos e espumantes.</p>
         </div>
         <div class="wine-board">
-          <article><span>Tintos</span><p>Rotulos para acompanhar cortes bovinos, cordeiro e suinos.</p></article>
-          <article><span>Brancos</span><p>Opcoes para peixes, frango, sushi e saladas.</p></article>
-          <article><span>Espumantes</span><p>Boa abertura para frios, queijos e celebracoes.</p></article>
+          <article><span>Tintos</span><p>Rótulos para acompanhar picanha, costela, cupim, cordeiro e cortes suínos.</p></article>
+          <article><span>Brancos</span><p>Opções para peixes, frango, sushi, saladas e pratos mais leves do buffet.</p></article>
+          <article><span>Espumantes</span><p>Boa abertura para frios, queijos, entradas e celebrações.</p></article>
         </div>
       </section>
 
@@ -139,21 +204,27 @@
         <div class="section-head">
           <span>Final doce</span>
           <h2>Sobremesas</h2>
-          <p>Menu de sobremesas para fechar o rodizio depois das carnes, buffet e bebidas.</p>
+          <p>Clássicos, itens regionais, bolos, tortas e carrinho de sobremesas com opções preparadas diariamente.</p>
         </div>
         <div class="menu-list">
-          <article class="menu-item"><div><span>Casa</span><h3>Sobremesas do Ponteio</h3><p>Selecao a confirmar com a casa para a versao final do cardapio.</p></div><strong>Consulte</strong></article>
+          <article class="menu-item"><div><span>Clássico</span><h3>Pudim de Leite</h3><p>Famoso pudim da casa, citado entre os doces caseiros do Ponteio.</p></div><strong>Consulte</strong></article>
+          <article class="menu-item"><div><span>Quente</span><h3>Cocada cremosa com sorvete</h3><p>Cocada cremosa servida quente, finalizada com sorvete.</p></div><strong>Consulte</strong></article>
+          <article class="menu-item"><div><span>Sorvete</span><h3>Creme de papaia com licor de cassis</h3><p>Sobremesa refrescante do menu oficial da casa.</p></div><strong>Consulte</strong></article>
+          <article class="menu-item"><div><span>Chocolate</span><h3>Petit gateau com sorvete</h3><p>Clássico servido com sorvete.</p></div><strong>Consulte</strong></article>
+          <article class="menu-item"><div><span>Regional</span><h3>Bolo de rolo com sorvete</h3><p>Doce regional em versão de sobremesa.</p></div><strong>Consulte</strong></article>
+          <article class="menu-item"><div><span>Tortas</span><h3>Banoffee, Red Velvet e outras tortas</h3><p>Opções do carrinho de sobremesas, preparadas diariamente.</p></div><strong>Consulte</strong></article>
+          <article class="menu-item"><div><span>Gelado</span><h3>Sundae</h3><p>Opção doce e refrescante para fechar a refeição.</p></div><strong>Consulte</strong></article>
         </div>
       </section>
 
       <section class="panel" id="panel-info" role="tabpanel" aria-labelledby="tab-info" hidden>
         <div class="section-head">
           <span>Restaurante</span>
-          <h2>Informacoes</h2>
+          <h2>Informações</h2>
           <p>Boa Viagem, Recife - PE</p>
         </div>
         <div class="info-grid">
-          <article><span>Endereco</span><p>Av. Visconde de Jequitinhonha, 138 - Boa Viagem, Recife - PE</p></article>
+          <article><span>Endereço</span><p>Av. Visconde de Jequitinhonha, 138 - Boa Viagem, Recife - PE</p></article>
           <article><span>Telefone</span><p>(81) 3125-3009</p></article>
           <article><span>Instagram</span><p>@ponteiorecife</p></article>
           <article><span>Funcionamento</span><p>A definir</p></article>

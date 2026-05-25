@@ -1,8 +1,6 @@
 const body = document.body;
 const tabs = Array.from(document.querySelectorAll('.tab-dock [role="tab"]'));
 const panels = Array.from(document.querySelectorAll('.tab-panels > [role="tabpanel"]'));
-const subTabs = Array.from(document.querySelectorAll('.subtab'));
-const subPanels = Array.from(document.querySelectorAll('.subpanel'));
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 document.querySelectorAll('.menu-item img, .photo-grid img, .cover-media img').forEach((img) => {
@@ -50,6 +48,12 @@ tabs.forEach((tab) => {
   tab.addEventListener('click', () => activatePrimaryTab(tab));
 });
 
-subTabs.forEach((tab) => {
-  tab.addEventListener('click', () => activateScopedTab(tab, subTabs, subPanels));
+document.querySelectorAll('.subtabs').forEach((group) => {
+  const parentPanel = group.closest('.panel');
+  const scopedTabs = Array.from(group.querySelectorAll('.subtab'));
+  const scopedPanels = Array.from(parentPanel.querySelectorAll('.subpanel'));
+
+  scopedTabs.forEach((tab) => {
+    tab.addEventListener('click', () => activateScopedTab(tab, scopedTabs, scopedPanels));
+  });
 });
