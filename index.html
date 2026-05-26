@@ -65,15 +65,41 @@
         </div>
 
         <div class="subpanel is-active" id="rodizio-bovino">
-          <div class="menu-list">
-            <article class="menu-item"><div><span>Clássico</span><h3>Picanha</h3><p>Corte nobre do rodízio, servido à mesa no ritmo da brasa.</p></div><strong>Incluso</strong></article>
-            <article class="menu-item"><div><span>Especial</span><h3>Filé com Queijo</h3><p>Filé preparado com queijo, uma das seleções destacadas pela casa.</p></div><strong>Incluso</strong></article>
-            <article class="menu-item"><div><span>Brasa lenta</span><h3>Costela</h3><p>Corte de sabor profundo, preparado para chegar macio e suculento.</p></div><strong>Incluso</strong></article>
-            <article class="menu-item"><div><span>Premium</span><h3>Costela Premium</h3><p>Versão especial da costela dentro da seleção de carnes do Ponteio.</p></div><strong>Incluso</strong></article>
-            <article class="menu-item"><div><span>Seleção</span><h3>Cupim</h3><p>Corte bovino marcante, servido em fatias no rodízio.</p></div><strong>Incluso</strong></article>
-            <article class="menu-item"><div><span>Maciez</span><h3>Fraldinha</h3><p>Corte de fibras longas, com bom equilíbrio entre suculência e sabor.</p></div><strong>Incluso</strong></article>
-            <article class="menu-item"><div><span>Tradicional</span><h3>Alcatra</h3><p>Opção clássica para quem prefere cortes bovinos mais suaves.</p></div><strong>Incluso</strong></article>
-            <article class="menu-item"><div><span>Corte nobre</span><h3>Bife de Chorizo</h3><p>Corte alto e intenso, presente na seleção oficial de carnes.</p></div><strong>Incluso</strong></article>
+          <div class="subtabs subtabs--nested" role="tablist" aria-label="Tipos de cortes bovinos">
+            <button class="subtab is-active" type="button" data-target="bovino-nobres">Nobres</button>
+            <button class="subtab" type="button" data-target="bovino-brasa-lenta">Brasa Lenta</button>
+            <button class="subtab" type="button" data-target="bovino-tradicionais">Tradicionais</button>
+            <button class="subtab" type="button" data-target="bovino-especiais">Especiais</button>
+          </div>
+
+          <div class="subpanel is-active" id="bovino-nobres">
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Clássico</span><h3>Picanha</h3><p>Corte nobre do rodízio, servido à mesa no ritmo da brasa.</p></div><strong>Incluso</strong></article>
+              <article class="menu-item"><div><span>Corte nobre</span><h3>Bife de Chorizo</h3><p>Corte alto e intenso, presente na seleção oficial de carnes.</p></div><strong>Incluso</strong></article>
+              <article class="menu-item"><div><span>Maciez</span><h3>Fraldinha</h3><p>Corte de fibras longas, com bom equilíbrio entre suculência e sabor.</p></div><strong>Incluso</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="bovino-brasa-lenta" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Brasa lenta</span><h3>Costela</h3><p>Corte de sabor profundo, preparado para chegar macio e suculento.</p></div><strong>Incluso</strong></article>
+              <article class="menu-item"><div><span>Premium</span><h3>Costela Premium</h3><p>Versão especial da costela dentro da seleção de carnes do Ponteio.</p></div><strong>Incluso</strong></article>
+              <article class="menu-item"><div><span>Seleção</span><h3>Cupim</h3><p>Corte bovino marcante, servido em fatias no rodízio.</p></div><strong>Incluso</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="bovino-tradicionais" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Tradicional</span><h3>Alcatra</h3><p>Opção clássica para quem prefere cortes bovinos mais suaves.</p></div><strong>Incluso</strong></article>
+              <article class="menu-item"><div><span>Seleção</span><h3>Cortes bovinos do dia</h3><p>Variações servidas conforme a sequência do salão.</p></div><strong>Incluso</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="bovino-especiais" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Especial</span><h3>Filé com Queijo</h3><p>Filé preparado com queijo, uma das seleções destacadas pela casa.</p></div><strong>Incluso</strong></article>
+              <article class="menu-item"><div><span>Curadoria</span><h3>Cortes especiais</h3><p>Itens de rotação para completar a experiência do rodízio.</p></div><strong>Consulte</strong></article>
+            </div>
           </div>
         </div>
 
@@ -92,9 +118,23 @@
         </div>
 
         <div class="subpanel" id="rodizio-aves-peixes" hidden>
-          <div class="menu-list">
-            <article class="menu-item"><div><span>Aves</span><h3>Frango</h3><p>Opção leve da sequência, preparada para equilibrar o rodízio.</p></div><strong>Incluso</strong></article>
-            <article class="menu-item"><div><span>Peixes</span><h3>Peixe</h3><p>Alternativa servida dentro da variedade de carnes do Ponteio.</p></div><strong>Incluso</strong></article>
+          <div class="subtabs subtabs--nested" role="tablist" aria-label="Tipos de aves e peixes do rodízio">
+            <button class="subtab is-active" type="button" data-target="rodizio-aves">Aves</button>
+            <button class="subtab" type="button" data-target="rodizio-peixes">Peixes</button>
+          </div>
+
+          <div class="subpanel is-active" id="rodizio-aves">
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Aves</span><h3>Frango</h3><p>Opção leve da sequência, preparada para equilibrar o rodízio.</p></div><strong>Incluso</strong></article>
+              <article class="menu-item"><div><span>Brasa</span><h3>Aves do dia</h3><p>Preparos variáveis para alternar com bovinos, cordeiro e suíno.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="rodizio-peixes" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Peixes</span><h3>Peixe</h3><p>Alternativa servida dentro da variedade de carnes do Ponteio.</p></div><strong>Incluso</strong></article>
+              <article class="menu-item"><div><span>Leve</span><h3>Peixe da casa</h3><p>Opção para quem quer equilibrar a sequência da brasa com um corte mais leve.</p></div><strong>Consulte</strong></article>
+            </div>
           </div>
         </div>
       </section>
@@ -125,66 +165,219 @@
         </div>
 
         <div class="subpanel is-active" id="buffet-proteinas">
-          <div class="menu-list">
-            <article class="menu-item"><div><span>Frutos do mar</span><h3>Camarão</h3><p>Item quente destacado pelo Ponteio entre os preparos da culinária pernambucana.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Frutos do mar</span><h3>Moqueca</h3><p>Preparo regional para compor o prato junto das carnes e guarnições.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Clássico</span><h3>Frango à Parmegiana</h3><p>Clássico de buffet quente para acompanhar arroz, massas e saladas.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Clássico</span><h3>Carne ao molho</h3><p>Opção quente para montar o prato com guarnições e saladas.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Peixe</span><h3>Peixe ao molho</h3><p>Alternativa mais leve dentro da seleção quente do buffet.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Tradicional</span><h3>Feijoada</h3><p>Servida às quartas e sábados, com os acompanhamentos essenciais.</p></div><strong>Dias especiais</strong></article>
+          <div class="subtabs subtabs--nested" role="tablist" aria-label="Tipos de proteínas do buffet">
+            <button class="subtab is-active" type="button" data-target="proteinas-frutos-mar">Frutos do Mar</button>
+            <button class="subtab" type="button" data-target="proteinas-aves">Aves</button>
+            <button class="subtab" type="button" data-target="proteinas-carnes">Carnes</button>
+            <button class="subtab" type="button" data-target="proteinas-regionais">Regionais</button>
+          </div>
+
+          <div class="subpanel is-active" id="proteinas-frutos-mar">
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Frutos do mar</span><h3>Camarão</h3><p>Item quente destacado pelo Ponteio entre os preparos da culinária pernambucana.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Frutos do mar</span><h3>Moqueca</h3><p>Preparo regional para compor o prato junto das carnes e guarnições.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Peixe</span><h3>Peixe ao molho</h3><p>Alternativa mais leve dentro da seleção quente do buffet.</p></div><strong>Buffet</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="proteinas-aves" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Clássico</span><h3>Frango à Parmegiana</h3><p>Clássico de buffet quente para acompanhar arroz, massas e saladas.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Forno</span><h3>Frango assado</h3><p>Opção de ave para compor o prato com guarnições e saladas.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Molho</span><h3>Frango ao molho</h3><p>Preparação quente para acompanhar arroz, purê e legumes.</p></div><strong>Buffet</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="proteinas-carnes" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Clássico</span><h3>Carne ao molho</h3><p>Opção quente para montar o prato com guarnições e saladas.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Caseiro</span><h3>Carne de panela</h3><p>Preparo clássico de buffet, macio e bem servido com arroz e farofa.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Moída</span><h3>Escondidinho</h3><p>Preparo regional que pode aparecer como opção quente do dia.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="proteinas-regionais" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Tradicional</span><h3>Feijoada</h3><p>Servida às quartas e sábados, com os acompanhamentos essenciais.</p></div><strong>Dias especiais</strong></article>
+              <article class="menu-item"><div><span>Pernambuco</span><h3>Charque acebolada</h3><p>Clássico regional para acompanhar baião de dois e farofa.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Regional</span><h3>Preparo do dia</h3><p>Curadoria quente da cozinha com receitas regionais variáveis.</p></div><strong>Consulte</strong></article>
+            </div>
           </div>
         </div>
 
         <div class="subpanel" id="buffet-massas" hidden>
-          <div class="menu-list">
-            <article class="menu-item"><div><span>Molhos</span><h3>Penne ao molho branco</h3><p>Massa cremosa para acompanhar proteínas e guarnições.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Molhos</span><h3>Espaguete à bolonhesa</h3><p>Clássico de buffet quente, servido com molho de carne.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Forno</span><h3>Lasanha</h3><p>Opção gratinada para compor o prato junto dos itens quentes.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Do dia</span><h3>Massa especial</h3><p>Preparo variável conforme a curadoria diária da cozinha.</p></div><strong>Consulte</strong></article>
+          <div class="subtabs subtabs--nested" role="tablist" aria-label="Tipos de massas do buffet">
+            <button class="subtab is-active" type="button" data-target="massas-molhos">Molhos</button>
+            <button class="subtab" type="button" data-target="massas-forno">Forno</button>
+            <button class="subtab" type="button" data-target="massas-do-dia">Do Dia</button>
+          </div>
+
+          <div class="subpanel is-active" id="massas-molhos">
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Molhos</span><h3>Penne ao molho branco</h3><p>Massa cremosa para acompanhar proteínas e guarnições.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Molhos</span><h3>Espaguete à bolonhesa</h3><p>Clássico de buffet quente, servido com molho de carne.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Molhos</span><h3>Massa ao sugo</h3><p>Opção simples e leve para compor com proteínas do buffet.</p></div><strong>Buffet</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="massas-forno" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Forno</span><h3>Lasanha</h3><p>Opção gratinada para compor o prato junto dos itens quentes.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Forno</span><h3>Macarrão gratinado</h3><p>Preparo cremoso de forno para acompanhar carnes e saladas.</p></div><strong>Buffet</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="massas-do-dia" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Do dia</span><h3>Massa especial</h3><p>Preparo variável conforme a curadoria diária da cozinha.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Do dia</span><h3>Molho especial</h3><p>Molho escolhido pela cozinha para complementar a estação de massas.</p></div><strong>Consulte</strong></article>
+            </div>
           </div>
         </div>
 
         <div class="subpanel" id="buffet-guarnicoes" hidden>
-          <div class="menu-list">
-            <article class="menu-item"><div><span>Pernambuco</span><h3>Baião de dois</h3><p>Receita regional destacada no buffet quente da casa.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Base</span><h3>Arroz branco</h3><p>Base clássica para carnes, frutos do mar e pratos quentes.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Base</span><h3>Arroz à grega</h3><p>Guarnição colorida para acompanhar proteínas e saladas.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Regional</span><h3>Farofa</h3><p>Acompanhamento essencial para carnes e feijoada.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Quente</span><h3>Purê de batatas</h3><p>Guarnição cremosa para acompanhar frango, carne e peixe.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Leve</span><h3>Legumes salteados</h3><p>Opção quente e leve para equilibrar o prato.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Feijoada</span><h3>Acompanhamentos essenciais</h3><p>Itens para montar a feijoada da forma que preferir às quartas e sábados.</p></div><strong>Dias especiais</strong></article>
+          <div class="subtabs subtabs--nested" role="tablist" aria-label="Tipos de guarnições do buffet">
+            <button class="subtab is-active" type="button" data-target="guarnicoes-regionais">Regionais</button>
+            <button class="subtab" type="button" data-target="guarnicoes-bases">Bases</button>
+            <button class="subtab" type="button" data-target="guarnicoes-quentes">Quentes</button>
+            <button class="subtab" type="button" data-target="guarnicoes-feijoada">Feijoada</button>
+          </div>
+
+          <div class="subpanel is-active" id="guarnicoes-regionais">
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Pernambuco</span><h3>Baião de dois</h3><p>Receita regional destacada no buffet quente da casa.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Regional</span><h3>Farofa</h3><p>Acompanhamento essencial para carnes e feijoada.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Regional</span><h3>Macaxeira</h3><p>Guarnição nordestina para acompanhar carnes e pratos quentes.</p></div><strong>Buffet</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="guarnicoes-bases" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Base</span><h3>Arroz branco</h3><p>Base clássica para carnes, frutos do mar e pratos quentes.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Base</span><h3>Arroz à grega</h3><p>Guarnição colorida para acompanhar proteínas e saladas.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Base</span><h3>Feijão</h3><p>Base quente para compor pratos regionais e clássicos.</p></div><strong>Buffet</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="guarnicoes-quentes" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Quente</span><h3>Purê de batatas</h3><p>Guarnição cremosa para acompanhar frango, carne e peixe.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Leve</span><h3>Legumes salteados</h3><p>Opção quente e leve para equilibrar o prato.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Crocante</span><h3>Batata rústica</h3><p>Guarnição para proteínas, massas e pratos regionais.</p></div><strong>Buffet</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="guarnicoes-feijoada" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Feijoada</span><h3>Acompanhamentos essenciais</h3><p>Itens para montar a feijoada da forma que preferir às quartas e sábados.</p></div><strong>Dias especiais</strong></article>
+              <article class="menu-item"><div><span>Feijoada</span><h3>Couve, farofa e laranja</h3><p>Clássicos para finalizar o prato de feijoada.</p></div><strong>Dias especiais</strong></article>
+            </div>
           </div>
         </div>
 
         <div class="subpanel" id="buffet-saladas" hidden>
-          <div class="menu-list">
-            <article class="menu-item"><div><span>Frescor</span><h3>Seleção de saladas</h3><p>Variedade colorida para abrir a refeição ou equilibrar o prato.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Folhas</span><h3>Folhas verdes</h3><p>Mix fresco para entradas leves.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Clássico</span><h3>Salada de maionese</h3><p>Item tradicional de buffet para acompanhar carnes e pratos quentes.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Clássico</span><h3>Salpicão</h3><p>Preparação fria para compor a mesa de saladas.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Grãos</span><h3>Salada de grãos</h3><p>Opção fria com textura e frescor para acompanhar vinhos e carnes.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Molho</span><h3>Vinagrete</h3><p>Acompanhamento fresco para carnes da brasa e feijoada.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Leves</span><h3>Entradas frias</h3><p>Opções para começar antes dos cortes da brasa.</p></div><strong>Buffet</strong></article>
+          <div class="subtabs subtabs--nested" role="tablist" aria-label="Tipos de saladas do buffet">
+            <button class="subtab is-active" type="button" data-target="saladas-folhas">Folhas</button>
+            <button class="subtab" type="button" data-target="saladas-compostas">Compostas</button>
+            <button class="subtab" type="button" data-target="saladas-graos">Grãos</button>
+            <button class="subtab" type="button" data-target="saladas-molhos">Molhos</button>
+          </div>
+
+          <div class="subpanel is-active" id="saladas-folhas">
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Frescor</span><h3>Seleção de saladas</h3><p>Variedade colorida para abrir a refeição ou equilibrar o prato.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Folhas</span><h3>Folhas verdes</h3><p>Mix fresco para entradas leves.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Leves</span><h3>Entradas frias</h3><p>Opções para começar antes dos cortes da brasa.</p></div><strong>Buffet</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="saladas-compostas" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Clássico</span><h3>Salada de maionese</h3><p>Item tradicional de buffet para acompanhar carnes e pratos quentes.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Clássico</span><h3>Salpicão</h3><p>Preparação fria para compor a mesa de saladas.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Legumes</span><h3>Legumes frios</h3><p>Opção simples e leve para entradas.</p></div><strong>Buffet</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="saladas-graos" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Grãos</span><h3>Salada de grãos</h3><p>Opção fria com textura e frescor para acompanhar vinhos e carnes.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Proteica</span><h3>Grão-de-bico</h3><p>Salada fria para compor pratos mais leves.</p></div><strong>Buffet</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="saladas-molhos" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Molho</span><h3>Vinagrete</h3><p>Acompanhamento fresco para carnes da brasa e feijoada.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Molhos</span><h3>Molhos para salada</h3><p>Opções para finalizar folhas, legumes e entradas frias.</p></div><strong>Buffet</strong></article>
+            </div>
           </div>
         </div>
 
         <div class="subpanel" id="buffet-sushi" hidden>
-          <div class="menu-list">
-            <article class="menu-item"><div><span>Japonês</span><h3>Sushi</h3><p>Seleção de sushi dentro do buffet do Ponteio.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Uramaki</span><h3>Uramakis variados</h3><p>Peças enroladas para alternar com saladas e frios.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Hossomaki</span><h3>Hossomakis</h3><p>Peças menores e leves dentro da seleção japonesa.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Quente</span><h3>Hot roll</h3><p>Opção empanada e quente da estação japonesa.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Entrada</span><h3>Sunomono</h3><p>Entrada fria para abrir a sequência japonesa do buffet.</p></div><strong>Buffet</strong></article>
+          <div class="subtabs subtabs--nested" role="tablist" aria-label="Tipos de sushi do buffet">
+            <button class="subtab is-active" type="button" data-target="sushi-frios">Sushis Frios</button>
+            <button class="subtab" type="button" data-target="sushi-quentes">Sushis Quentes</button>
+            <button class="subtab" type="button" data-target="sushi-entradas">Entradas</button>
+          </div>
+
+          <div class="subpanel is-active" id="sushi-frios">
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Japonês</span><h3>Sushi</h3><p>Seleção de sushi dentro do buffet do Ponteio.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Uramaki</span><h3>Uramakis variados</h3><p>Peças enroladas para alternar com saladas e frios.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Hossomaki</span><h3>Hossomakis</h3><p>Peças menores e leves dentro da seleção japonesa.</p></div><strong>Buffet</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="sushi-quentes" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Quente</span><h3>Hot roll</h3><p>Opção empanada e quente da estação japonesa.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Quente</span><h3>Itens empanados</h3><p>Seleção quente da estação japonesa, conforme disponibilidade.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="sushi-entradas" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Entrada</span><h3>Sunomono</h3><p>Entrada fria para abrir a sequência japonesa do buffet.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Molhos</span><h3>Molhos e acompanhamentos</h3><p>Itens de apoio para a estação japonesa.</p></div><strong>Buffet</strong></article>
+            </div>
           </div>
         </div>
 
         <div class="subpanel" id="buffet-frios" hidden>
-          <div class="menu-list">
-            <article class="menu-item"><div><span>Vinhos</span><h3>Queijos e frios</h3><p>Seleção fria para entradas e harmonização com vinhos.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Queijos</span><h3>Queijos variados</h3><p>Opções para montar entrada ou acompanhar espumantes e tintos leves.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Frios</span><h3>Presunto, salame e frios fatiados</h3><p>Clássicos de mesa fria para começar a refeição.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Antepastos</span><h3>Azeitonas e conservas</h3><p>Itens frios para compor entradas e harmonizações.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Frutas</span><h3>Frutas frescas</h3><p>Opção leve para equilibrar frios, queijos e pratos quentes.</p></div><strong>Buffet</strong></article>
+          <div class="subtabs subtabs--nested" role="tablist" aria-label="Tipos de frios do buffet">
+            <button class="subtab is-active" type="button" data-target="frios-queijos">Queijos</button>
+            <button class="subtab" type="button" data-target="frios-embutidos">Frios</button>
+            <button class="subtab" type="button" data-target="frios-antepastos">Antepastos</button>
+            <button class="subtab" type="button" data-target="frios-frutas">Frutas</button>
+          </div>
+
+          <div class="subpanel is-active" id="frios-queijos">
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Vinhos</span><h3>Queijos e frios</h3><p>Seleção fria para entradas e harmonização com vinhos.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Queijos</span><h3>Queijos variados</h3><p>Opções para montar entrada ou acompanhar espumantes e tintos leves.</p></div><strong>Buffet</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="frios-embutidos" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Frios</span><h3>Presunto, salame e frios fatiados</h3><p>Clássicos de mesa fria para começar a refeição.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Frios</span><h3>Seleção de embutidos</h3><p>Itens frios para montar entradas e pratos leves.</p></div><strong>Buffet</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="frios-antepastos" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Antepastos</span><h3>Azeitonas e conservas</h3><p>Itens frios para compor entradas e harmonizações.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Entradas</span><h3>Patês e pastas frias</h3><p>Opções para acompanhar pães, saladas e queijos.</p></div><strong>Buffet</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="frios-frutas" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Frutas</span><h3>Frutas frescas</h3><p>Opção leve para equilibrar frios, queijos e pratos quentes.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Leve</span><h3>Frutas da estação</h3><p>Seleção variável para entrada ou fechamento leve.</p></div><strong>Buffet</strong></article>
+            </div>
           </div>
         </div>
       </section>
@@ -214,50 +407,164 @@
         </div>
 
         <div class="subpanel is-active" id="bebidas-caipirinhas">
-          <div class="menu-list">
-            <article class="menu-item"><div><span>Carrinho</span><h3>Caipirinha tradicional de limão</h3><p>Preparada ao lado da mesa, com frutas frescas e cuidado de bar.</p></div><strong>Consulte</strong></article>
-            <article class="menu-item"><div><span>Frutas</span><h3>Caipirinha de frutas vermelhas</h3><p>Variação destacada pela casa para o carrinho de caipirinhas.</p></div><strong>Consulte</strong></article>
-            <article class="menu-item"><div><span>Frutas</span><h3>Caipirinha de frutas amarelas</h3><p>Opção frutada para acompanhar carnes, buffet e sobremesas.</p></div><strong>Consulte</strong></article>
-            <article class="menu-item"><div><span>Frutas</span><h3>Caipirinha de frutas silvestres</h3><p>Variação aromática do carrinho da casa.</p></div><strong>Consulte</strong></article>
-            <article class="menu-item"><div><span>Regional</span><h3>Caipirinha de caju</h3><p>Opção com fruta regional, conforme disponibilidade.</p></div><strong>Consulte</strong></article>
-            <article class="menu-item"><div><span>Frutas</span><h3>Caipirinha de tangerina</h3><p>Variação cítrica para abrir o apetite.</p></div><strong>Consulte</strong></article>
-            <article class="menu-item"><div><span>Frutas</span><h3>Caipirinha de kiwi</h3><p>Opção refrescante do carrinho de caipirinhas.</p></div><strong>Consulte</strong></article>
+          <div class="subtabs subtabs--nested" role="tablist" aria-label="Tipos de caipirinhas">
+            <button class="subtab is-active" type="button" data-target="caipirinhas-classicas">Clássicas</button>
+            <button class="subtab" type="button" data-target="caipirinhas-frutas">Frutas</button>
+            <button class="subtab" type="button" data-target="caipirinhas-regionais">Regionais</button>
+            <button class="subtab" type="button" data-target="caipirinhas-especiais">Especiais</button>
+          </div>
+
+          <div class="subpanel is-active" id="caipirinhas-classicas">
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Carrinho</span><h3>Caipirinha tradicional de limão</h3><p>Preparada ao lado da mesa, com frutas frescas e cuidado de bar.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Base</span><h3>Caipirinha clássica</h3><p>Preparo tradicional para abrir a refeição junto das entradas e carnes.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="caipirinhas-frutas" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Frutas</span><h3>Caipirinha de frutas vermelhas</h3><p>Variação destacada pela casa para o carrinho de caipirinhas.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Frutas</span><h3>Caipirinha de frutas amarelas</h3><p>Opção frutada para acompanhar carnes, buffet e sobremesas.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Frutas</span><h3>Caipirinha de frutas silvestres</h3><p>Variação aromática do carrinho da casa.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="caipirinhas-regionais" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Regional</span><h3>Caipirinha de caju</h3><p>Opção com fruta regional, conforme disponibilidade.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Cítrica</span><h3>Caipirinha de tangerina</h3><p>Variação cítrica para abrir o apetite.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="caipirinhas-especiais" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Refrescante</span><h3>Caipirinha de kiwi</h3><p>Opção refrescante do carrinho de caipirinhas.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Do carrinho</span><h3>Fruta do dia</h3><p>Variação preparada conforme as frutas frescas disponíveis.</p></div><strong>Consulte</strong></article>
+            </div>
           </div>
         </div>
 
         <div class="subpanel" id="bebidas-drinks" hidden>
-          <div class="menu-list">
-            <article class="menu-item"><div><span>Clássico</span><h3>Mojito</h3><p>Coquetel refrescante para acompanhar o almoço ou jantar.</p></div><strong>Consulte</strong></article>
-            <article class="menu-item"><div><span>Spritz</span><h3>Aperol</h3><p>Drink leve e cítrico para brindar antes ou durante a refeição.</p></div><strong>Consulte</strong></article>
-            <article class="menu-item"><div><span>Clássico</span><h3>Negroni</h3><p>Coquetel intenso para quem prefere sabores mais marcantes.</p></div><strong>Consulte</strong></article>
-            <article class="menu-item"><div><span>Gin</span><h3>Gin tônica</h3><p>Clássico aromático para harmonizar com frios, queijos e entradas.</p></div><strong>Consulte</strong></article>
-            <article class="menu-item"><div><span>Clássico</span><h3>Martini</h3><p>Drink tradicional para celebrações e ocasiões especiais.</p></div><strong>Consulte</strong></article>
+          <div class="subtabs subtabs--nested" role="tablist" aria-label="Tipos de drinks">
+            <button class="subtab is-active" type="button" data-target="drinks-classicos">Clássicos</button>
+            <button class="subtab" type="button" data-target="drinks-aperitivos">Aperitivos</button>
+            <button class="subtab" type="button" data-target="drinks-gin">Gin</button>
+          </div>
+
+          <div class="subpanel is-active" id="drinks-classicos">
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Clássico</span><h3>Mojito</h3><p>Coquetel refrescante para acompanhar o almoço ou jantar.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Clássico</span><h3>Martini</h3><p>Drink tradicional para celebrações e ocasiões especiais.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="drinks-aperitivos" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Spritz</span><h3>Aperol</h3><p>Drink leve e cítrico para brindar antes ou durante a refeição.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Clássico</span><h3>Negroni</h3><p>Coquetel intenso para quem prefere sabores mais marcantes.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="drinks-gin" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Gin</span><h3>Gin tônica</h3><p>Clássico aromático para harmonizar com frios, queijos e entradas.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Gin</span><h3>Gin da casa</h3><p>Preparo do bar com especiarias e finalização conforme disponibilidade.</p></div><strong>Consulte</strong></article>
+            </div>
           </div>
         </div>
 
         <div class="subpanel" id="bebidas-sem-alcool" hidden>
-          <div class="menu-list">
-            <article class="menu-item"><div><span>Coquetel</span><h3>Coquetéis sem álcool</h3><p>Opções do bar para quem prefere uma experiência sem bebida alcoólica.</p></div><strong>Consulte</strong></article>
-            <article class="menu-item"><div><span>Frutas</span><h3>Coquetel de frutas</h3><p>Bebida leve e frutada para acompanhar buffet e sobremesas.</p></div><strong>Consulte</strong></article>
-            <article class="menu-item"><div><span>Refrescante</span><h3>Soda italiana</h3><p>Opção gaseificada e aromática sem álcool.</p></div><strong>Consulte</strong></article>
+          <div class="subtabs subtabs--nested" role="tablist" aria-label="Tipos de coquetéis sem álcool">
+            <button class="subtab is-active" type="button" data-target="sem-alcool-coqueteis">Coquetéis</button>
+            <button class="subtab" type="button" data-target="sem-alcool-frutas">Frutas</button>
+            <button class="subtab" type="button" data-target="sem-alcool-refrescantes">Refrescantes</button>
+          </div>
+
+          <div class="subpanel is-active" id="sem-alcool-coqueteis">
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Coquetel</span><h3>Coquetéis sem álcool</h3><p>Opções do bar para quem prefere uma experiência sem bebida alcoólica.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Zero álcool</span><h3>Mocktail da casa</h3><p>Preparo do bar com frutas, gelo e finalização aromática.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="sem-alcool-frutas" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Frutas</span><h3>Coquetel de frutas</h3><p>Bebida leve e frutada para acompanhar buffet e sobremesas.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Natural</span><h3>Frutas frescas batidas</h3><p>Opção variável conforme disponibilidade da casa.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="sem-alcool-refrescantes" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Refrescante</span><h3>Soda italiana</h3><p>Opção gaseificada e aromática sem álcool.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Cítrico</span><h3>Limonada especial</h3><p>Bebida leve para acompanhar cortes da brasa e saladas.</p></div><strong>Consulte</strong></article>
+            </div>
           </div>
         </div>
 
         <div class="subpanel" id="bebidas-nao-alcoolicas" hidden>
-          <div class="menu-list">
-            <article class="menu-item"><div><span>Água</span><h3>Água mineral</h3><p>Com ou sem gás.</p></div><strong>Consulte</strong></article>
-            <article class="menu-item"><div><span>Clássico</span><h3>Refrigerantes</h3><p>Opções tradicionais para acompanhar o rodízio.</p></div><strong>Consulte</strong></article>
-            <article class="menu-item"><div><span>Frutas</span><h3>Sucos naturais</h3><p>Sabores variados conforme disponibilidade da casa.</p></div><strong>Consulte</strong></article>
-            <article class="menu-item"><div><span>Café</span><h3>Café espresso</h3><p>Boa pedida para fechar a refeição ou acompanhar sobremesas.</p></div><strong>Consulte</strong></article>
+          <div class="subtabs subtabs--nested" role="tablist" aria-label="Tipos de bebidas não alcoólicas">
+            <button class="subtab is-active" type="button" data-target="nao-alcoolicas-aguas">Águas</button>
+            <button class="subtab" type="button" data-target="nao-alcoolicas-sucos">Sucos</button>
+            <button class="subtab" type="button" data-target="nao-alcoolicas-refrigerantes">Refrigerantes</button>
+            <button class="subtab" type="button" data-target="nao-alcoolicas-cafes">Cafés</button>
+          </div>
+
+          <div class="subpanel is-active" id="nao-alcoolicas-aguas">
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Água</span><h3>Água mineral</h3><p>Com ou sem gás.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Mesa</span><h3>Água com gás</h3><p>Boa opção para acompanhar carnes, frios e vinhos.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="nao-alcoolicas-sucos" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Frutas</span><h3>Sucos naturais</h3><p>Sabores variados conforme disponibilidade da casa.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Frutas</span><h3>Sucos especiais</h3><p>Combinações de frutas para acompanhar o buffet e sobremesas.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="nao-alcoolicas-refrigerantes" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Clássico</span><h3>Refrigerantes</h3><p>Opções tradicionais para acompanhar o rodízio.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Zero</span><h3>Refrigerantes zero</h3><p>Opções sem açúcar, conforme disponibilidade.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="nao-alcoolicas-cafes" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Café</span><h3>Café espresso</h3><p>Boa pedida para fechar a refeição ou acompanhar sobremesas.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Café</span><h3>Café com leite</h3><p>Opção suave para acompanhar doces e tortas.</p></div><strong>Consulte</strong></article>
+            </div>
           </div>
         </div>
 
         <div class="subpanel" id="bebidas-destilados" hidden>
-          <div class="menu-list">
-            <article class="menu-item"><div><span>Whisky</span><h3>Doses de whisky</h3><p>Seleção do bar para servir pura ou com gelo.</p></div><strong>Consulte</strong></article>
-            <article class="menu-item"><div><span>Vodka</span><h3>Vodkas</h3><p>Base para drinks ou dose, conforme carta da casa.</p></div><strong>Consulte</strong></article>
-            <article class="menu-item"><div><span>Gin</span><h3>Gins</h3><p>Opções para gin tônica e outros preparos do bar.</p></div><strong>Consulte</strong></article>
-            <article class="menu-item"><div><span>Cachaça</span><h3>Cachaças</h3><p>Base para caipirinhas ou dose, conforme disponibilidade.</p></div><strong>Consulte</strong></article>
+          <div class="subtabs subtabs--nested" role="tablist" aria-label="Tipos de destilados">
+            <button class="subtab is-active" type="button" data-target="destilados-whisky">Whisky</button>
+            <button class="subtab" type="button" data-target="destilados-gin-vodka">Gin e Vodka</button>
+            <button class="subtab" type="button" data-target="destilados-cachacas">Cachaças</button>
+          </div>
+
+          <div class="subpanel is-active" id="destilados-whisky">
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Whisky</span><h3>Doses de whisky</h3><p>Seleção do bar para servir pura ou com gelo.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Whisky</span><h3>Whisky premium</h3><p>Rótulos para servir em dose ou acompanhar sobremesas intensas.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="destilados-gin-vodka" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Vodka</span><h3>Vodkas</h3><p>Base para drinks ou dose, conforme carta da casa.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Gin</span><h3>Gins</h3><p>Opções para gin tônica e outros preparos do bar.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="destilados-cachacas" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Cachaça</span><h3>Cachaças</h3><p>Base para caipirinhas ou dose, conforme disponibilidade.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Brasil</span><h3>Cachaças especiais</h3><p>Seleção para degustar pura ou usar no carrinho de caipirinhas.</p></div><strong>Consulte</strong></article>
+            </div>
           </div>
         </div>
       </section>
@@ -268,10 +575,41 @@
           <h2>Vinhos para carnes e frios</h2>
           <p>A adega reúne mais de 100 rótulos do novo e velho mundo, entre brancos, tintos e espumantes.</p>
         </div>
-        <div class="wine-board">
-          <article><span>Tintos</span><p>Rótulos para acompanhar picanha, costela, cupim, cordeiro e cortes suínos.</p></article>
-          <article><span>Brancos</span><p>Opções para peixes, frango, sushi, saladas e pratos mais leves do buffet.</p></article>
-          <article><span>Espumantes</span><p>Boa abertura para frios, queijos, entradas e celebrações.</p></article>
+
+        <div class="subtabs" role="tablist" aria-label="Categorias de vinhos">
+          <button class="subtab is-active" type="button" data-target="vinhos-tintos">Tintos</button>
+          <button class="subtab" type="button" data-target="vinhos-brancos">Brancos</button>
+          <button class="subtab" type="button" data-target="vinhos-espumantes">Espumantes</button>
+          <button class="subtab" type="button" data-target="vinhos-harmonizacao">Harmonização</button>
+        </div>
+
+        <div class="subpanel is-active" id="vinhos-tintos">
+          <div class="wine-board">
+            <article><span>Tintos encorpados</span><p>Rótulos para acompanhar picanha, costela, cupim e bife de chorizo.</p></article>
+            <article><span>Tintos médios</span><p>Boas escolhas para cordeiro, suíno, carnes ao molho e queijos curados.</p></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="vinhos-brancos" hidden>
+          <div class="wine-board">
+            <article><span>Brancos leves</span><p>Opções para peixes, frango, sushi, saladas e pratos mais leves do buffet.</p></article>
+            <article><span>Brancos aromáticos</span><p>Boa companhia para frutos do mar, queijos e entradas frias.</p></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="vinhos-espumantes" hidden>
+          <div class="wine-board">
+            <article><span>Brut</span><p>Boa abertura para frios, queijos, entradas e celebrações.</p></article>
+            <article><span>Moscatel</span><p>Combina com sobremesas, frutas e encerramento da refeição.</p></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="vinhos-harmonizacao" hidden>
+          <div class="wine-board">
+            <article><span>Carnes</span><p>Tintos para cortes bovinos, cordeiro e preparos de sabor mais intenso.</p></article>
+            <article><span>Buffet</span><p>Brancos e espumantes para sushi, saladas, frios e frutos do mar.</p></article>
+            <article><span>Sobremesas</span><p>Espumantes doces e rótulos leves para acompanhar o carrinho de sobremesas.</p></article>
+          </div>
         </div>
       </section>
 
@@ -281,14 +619,41 @@
           <h2>Sobremesas</h2>
           <p>Clássicos, itens regionais, bolos, tortas e carrinho de sobremesas com opções preparadas diariamente.</p>
         </div>
-        <div class="menu-list">
-          <article class="menu-item"><div><span>Clássico</span><h3>Pudim de Leite</h3><p>Famoso pudim da casa, citado entre os doces caseiros do Ponteio.</p></div><strong>Consulte</strong></article>
-          <article class="menu-item"><div><span>Quente</span><h3>Cocada cremosa com sorvete</h3><p>Cocada cremosa servida quente, finalizada com sorvete.</p></div><strong>Consulte</strong></article>
-          <article class="menu-item"><div><span>Sorvete</span><h3>Creme de papaia com licor de cassis</h3><p>Sobremesa refrescante do menu oficial da casa.</p></div><strong>Consulte</strong></article>
-          <article class="menu-item"><div><span>Chocolate</span><h3>Petit gateau com sorvete</h3><p>Clássico servido com sorvete.</p></div><strong>Consulte</strong></article>
-          <article class="menu-item"><div><span>Regional</span><h3>Bolo de rolo com sorvete</h3><p>Doce regional em versão de sobremesa.</p></div><strong>Consulte</strong></article>
-          <article class="menu-item"><div><span>Tortas</span><h3>Banoffee, Red Velvet e outras tortas</h3><p>Opções do carrinho de sobremesas, preparadas diariamente.</p></div><strong>Consulte</strong></article>
-          <article class="menu-item"><div><span>Gelado</span><h3>Sundae</h3><p>Opção doce e refrescante para fechar a refeição.</p></div><strong>Consulte</strong></article>
+
+        <div class="subtabs" role="tablist" aria-label="Categorias de sobremesas">
+          <button class="subtab is-active" type="button" data-target="sobremesas-classicas">Clássicas</button>
+          <button class="subtab" type="button" data-target="sobremesas-regionais">Regionais</button>
+          <button class="subtab" type="button" data-target="sobremesas-tortas">Tortas</button>
+          <button class="subtab" type="button" data-target="sobremesas-geladas">Geladas</button>
+        </div>
+
+        <div class="subpanel is-active" id="sobremesas-classicas">
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Clássico</span><h3>Pudim de Leite</h3><p>Famoso pudim da casa, citado entre os doces caseiros do Ponteio.</p></div><strong>Consulte</strong></article>
+            <article class="menu-item"><div><span>Chocolate</span><h3>Petit gateau com sorvete</h3><p>Clássico servido com sorvete.</p></div><strong>Consulte</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="sobremesas-regionais" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Quente</span><h3>Cocada cremosa com sorvete</h3><p>Cocada cremosa servida quente, finalizada com sorvete.</p></div><strong>Consulte</strong></article>
+            <article class="menu-item"><div><span>Regional</span><h3>Bolo de rolo com sorvete</h3><p>Doce regional em versão de sobremesa.</p></div><strong>Consulte</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="sobremesas-tortas" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Tortas</span><h3>Banoffee</h3><p>Opção do carrinho de sobremesas, preparada diariamente.</p></div><strong>Consulte</strong></article>
+            <article class="menu-item"><div><span>Tortas</span><h3>Red Velvet</h3><p>Torta citada entre as opções do carrinho da casa.</p></div><strong>Consulte</strong></article>
+            <article class="menu-item"><div><span>Carrinho</span><h3>Outras tortas</h3><p>Seleção diária do carrinho de sobremesas.</p></div><strong>Consulte</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="sobremesas-geladas" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Sorvete</span><h3>Creme de papaia com licor de cassis</h3><p>Sobremesa refrescante do menu oficial da casa.</p></div><strong>Consulte</strong></article>
+            <article class="menu-item"><div><span>Gelado</span><h3>Sundae</h3><p>Opção doce e refrescante para fechar a refeição.</p></div><strong>Consulte</strong></article>
+          </div>
         </div>
       </section>
 

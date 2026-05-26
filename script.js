@@ -49,9 +49,10 @@ tabs.forEach((tab) => {
 });
 
 document.querySelectorAll('.subtabs').forEach((group) => {
-  const parentPanel = group.closest('.panel');
   const scopedTabs = Array.from(group.querySelectorAll('.subtab'));
-  const scopedPanels = Array.from(parentPanel.querySelectorAll('.subpanel'));
+  const scopedPanels = scopedTabs
+    .map((tab) => document.getElementById(tab.dataset.target))
+    .filter(Boolean);
 
   scopedTabs.forEach((tab) => {
     tab.addEventListener('click', () => activateScopedTab(tab, scopedTabs, scopedPanels));

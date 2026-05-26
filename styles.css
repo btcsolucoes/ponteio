@@ -335,6 +335,16 @@ p { margin: 0; }
 
 .subtabs::-webkit-scrollbar { display: none; }
 
+.subtabs--nested {
+  grid-auto-columns: minmax(96px, max-content);
+  gap: 6px;
+  margin: 2px 0 14px;
+  padding: 8px;
+  background: rgba(92, 41, 25, .07);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
 .subtab {
   min-height: 48px;
   color: var(--accent);
@@ -343,6 +353,13 @@ p { margin: 0; }
   background: transparent;
   border: 1px solid var(--line);
   border-radius: 8px;
+}
+
+.subtabs--nested .subtab {
+  min-height: 38px;
+  padding: 8px 12px;
+  font-size: .78rem;
+  background: rgba(255, 248, 236, .58);
 }
 
 .subtab.is-active {
