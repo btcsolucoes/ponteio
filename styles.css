@@ -11,9 +11,9 @@
   --ink: #28140e;
   --muted: #75513e;
   --line: rgba(92, 41, 25, .2);
-  --display: "Cormorant Garamond", Georgia, serif;
-  --brand: "Bebas Neue", Impact, sans-serif;
-  --text: "Libre Franklin", system-ui, sans-serif;
+  --display: "Cinzel", Georgia, serif;
+  --brand: "Cinzel", Georgia, serif;
+  --text: "Libre Baskerville", Georgia, serif;
 }
 
 body[data-theme="rodizio"] { --accent: #7e1713; --accent-2: #c99645; }
@@ -153,20 +153,17 @@ img {
   gap: 8px;
   color: var(--accent-2);
   font-family: var(--brand);
-  font-size: .98rem;
+  font-size: .78rem;
+  font-weight: 700;
   letter-spacing: 0;
   text-transform: uppercase;
 }
 
 .menu-word {
   display: block;
-  font-size: .72rem;
-  font-weight: 900;
-  letter-spacing: .14em;
-}
-
-.menu-word {
-  letter-spacing: .54em;
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: 0;
   text-shadow: 0 2px 14px rgba(0, 0, 0, .54);
 }
 
@@ -215,13 +212,16 @@ p { margin: 0; }
 
 .tab span {
   color: rgba(217, 179, 106, .68);
-  font-family: var(--display);
-  font-size: .95rem;
+  font-family: var(--brand);
+  font-size: .82rem;
+  font-weight: 700;
 }
 
 .tab b {
   align-self: end;
-  font-size: .78rem;
+  font-family: var(--brand);
+  font-size: .76rem;
+  font-weight: 800;
   line-height: 1.15;
   text-transform: uppercase;
 }
@@ -251,8 +251,9 @@ p { margin: 0; }
 .menu-status span {
   padding: 9px 13px;
   color: var(--cream);
-  font-size: .72rem;
-  font-weight: 800;
+  font-family: var(--brand);
+  font-size: .68rem;
+  font-weight: 700;
   text-transform: uppercase;
   background: rgba(39, 13, 10, .28);
   border: 1px solid rgba(255, 230, 179, .28);
@@ -280,13 +281,14 @@ p { margin: 0; }
 .section-head h2 {
   color: var(--accent);
   font-family: var(--display);
-  font-size: clamp(2.25rem, 6vw, 4.6rem);
-  line-height: .95;
+  font-size: clamp(1.9rem, 5vw, 3.7rem);
+  font-weight: 700;
+  line-height: 1.03;
 }
 
 .section-head p {
   color: var(--muted);
-  font-size: 1rem;
+  font-size: .98rem;
   line-height: 1.7;
 }
 
@@ -313,8 +315,9 @@ p { margin: 0; }
   margin-top: 8px;
   color: var(--accent);
   font-family: var(--display);
-  font-size: clamp(2rem, 5vw, 3.8rem);
-  line-height: .95;
+  font-size: clamp(1.7rem, 4.4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.04;
 }
 
 .feature-strip p {
@@ -348,7 +351,9 @@ p { margin: 0; }
 .subtab {
   min-height: 48px;
   color: var(--accent);
-  font-weight: 800;
+  font-family: var(--brand);
+  font-size: .72rem;
+  font-weight: 700;
   text-transform: uppercase;
   background: transparent;
   border: 1px solid var(--line);
@@ -358,7 +363,7 @@ p { margin: 0; }
 .subtabs--nested .subtab {
   min-height: 38px;
   padding: 8px 12px;
-  font-size: .78rem;
+  font-size: .68rem;
   background: rgba(255, 248, 236, .58);
 }
 
@@ -393,15 +398,17 @@ p { margin: 0; }
   margin-top: 5px;
   color: var(--accent);
   font-family: var(--display);
-  font-size: clamp(1.45rem, 3vw, 2rem);
-  line-height: 1;
+  font-size: clamp(1.18rem, 2.5vw, 1.52rem);
+  font-weight: 700;
+  line-height: 1.16;
 }
 
 .menu-item p {
   max-width: 640px;
   margin-top: 6px;
   color: var(--muted);
-  line-height: 1.55;
+  font-size: .92rem;
+  line-height: 1.62;
 }
 
 .menu-item strong {
@@ -412,7 +419,8 @@ p { margin: 0; }
   padding: 10px 13px;
   color: var(--cream);
   font-family: var(--brand);
-  font-size: 1rem;
+  font-size: .7rem;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   background: var(--accent);
@@ -458,7 +466,8 @@ p { margin: 0; }
   margin-top: 16px;
   color: var(--accent);
   font-family: var(--display);
-  font-size: 2rem;
+  font-size: 1.55rem;
+  font-weight: 700;
 }
 
 .photo-grid p {
@@ -511,7 +520,8 @@ p { margin: 0; }
 
 .menu-footer p {
   font-family: var(--display);
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 @media (max-width: 820px) {
@@ -587,10 +597,6 @@ p { margin: 0; }
   .brand-logo {
     width: min(320px, 78vw);
     margin-bottom: 20px;
-  }
-
-  .menu-word {
-    letter-spacing: .34em;
   }
 
   .tab {
