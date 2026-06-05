@@ -687,7 +687,7 @@ body.nav-is-fixed .tab-panels {
 }
 
 .panel {
-  width: min(860px, calc(100% - 48px));
+  width: min(860px, calc(100vw - 48px));
   scroll-margin-top: 94px;
 }
 
@@ -710,5 +710,81 @@ body.nav-is-fixed .tab-panels {
 
   .tab b { font-size: .68rem; }
 
-  .panel { width: calc(100% - 24px); }
+  .panel { width: calc(100vw - 24px); }
+}
+
+/* QrStack production refinements */
+.background-brand-marks {
+  position: absolute;
+  inset: 100svh calc(50% - 50vw) 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.brand-mark {
+  position: absolute;
+  width: clamp(76px, 12vw, 156px);
+  opacity: .055;
+  filter: sepia(.28) saturate(.8);
+}
+
+.brand-mark--one { top: 8%; left: 5%; transform: rotate(-14deg); }
+.brand-mark--two { top: 23%; right: 7%; transform: rotate(11deg) scale(.92); }
+.brand-mark--three { top: 46%; left: 12%; transform: rotate(18deg) scale(.78); }
+.brand-mark--four { top: 64%; right: 13%; transform: rotate(-9deg) scale(1.05); }
+.brand-mark--five { top: 82%; left: 45%; transform: rotate(7deg) scale(.86); }
+
+.tab-panels {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: clamp(40px, 6vw, 72px);
+  padding-top: clamp(28px, 4vw, 42px);
+}
+
+body.nav-is-fixed .tab-panels {
+  padding-top: calc(var(--dock-height, 76px) + clamp(28px, 4vw, 42px));
+}
+
+.panel { margin-top: 0; }
+
+.subtabs,
+.subtabs--nested {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-padding-inline: 8px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.subpanel {
+  min-width: 0;
+}
+
+.subtab,
+.subtabs--nested .subtab {
+  flex: 0 0 auto;
+  min-width: clamp(108px, 30vw, 170px);
+  max-width: 220px;
+  padding-inline: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .background-brand-marks {
+    inset-inline: 0;
+  }
+
+  .brand-mark {
+    width: clamp(64px, 22vw, 112px);
+    opacity: .045;
+  }
 }
